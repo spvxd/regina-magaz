@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+* img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background: url(../img/background.jpg); 
+    background-size: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/*--------------------General--------------------*/
+.title {
+    max-width: 1450px;
+    font-weight: 600;
+    font-size: clamp(1.875rem, 1.548rem + 1.64vw, 3rem);
+    line-height: 1.26;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.link {
+    display: inline-block;
+    margin-top: 45px;
+    padding: 22px 42px;
+    background-color: var(--accent-color);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: capitalize;
+    transition: background-color 0.2s;
+}
+
+
+
+/*--------------------/General--------------------*/
+/*--------------------Header--------------------*/
+.header {
+    background: rgba(87, 84, 84, 0.39);
+    height: 90px;
+
+
+}
+
+.header__cont {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.header__logo {
+    padding-left: 76px;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+    gap: clamp(1.25rem, -2.799rem + 8.44vw, 4.688rem);
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+
+
+    margin: auto;
+
+
+
+}
+
+.menu__item {
+    margin-right: 30px;
+    justify-content: center;
+}
+
+.header__buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.header__btn {
+    width: 209px;
+    height: 47px;
+    background: #C6C6C6;
+    border: 2px solid #000000;
+    border-radius: 109.5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    margin-left: 20px;
+
+}
+
+@media (max-width: 576px) {
+    .header__btn {
+        padding: 7px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 80%;
+        display: flex;
+        overflow: auto;
+        padding: 20px 0;
+        background-color: var(--accent-color);
+        transition: left 0.2s;
+    }
+
+    .menu._active {
+        left: 0;
+    }
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .menu-icon {
+        display: block;
+        height: 18px;
+        width: 30px;
+        position: relative;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .menu-icon span {
+        transition: all 0.3s ease 0s;
+        top: calc(50% - 1px);
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .menu-icon span:first-child {
+        top: 0;
+    }
+
+    .menu-icon span:last-child {
+        top: auto;
+        bottom: 0;
+    }
+
+    .menu-icon._active span {
+        transform: scale(0);
+    }
+
+    .menu-icon._active span:first-child {
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+    }
+
+    .menu-icon._active span:last-child {
+        transform: rotate(45deg);
+        bottom: calc(50% - 1px);
+    }
+}
+
+.menu__body {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (max-width: 992px) {
+    .menu__body {
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+.menu__link {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.menu__link:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background-color: var(--accent-color);
+    height: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+
+@media (any-hover: hover) {
+    .menu__link:hover {
+        color: #fff;
+    }
+
+    .menu__link:hover:before {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu__link {
+        line-height: 50px;
+        font-size: 30px;
+    }
+}
+
+@media (any-hover: hover) {
+    .login:hover {
+        background-color: var(--accent-color);
+    }
+}
+
+@media (max-width: 425px) {
+    .login {
+        display: none;
+    }
+}
+
+.register {
+    background-color: var(--accent-color);
+}
+
+@media (any-hover: hover) {
+    .register:hover {
+        background-color: transparent;
+    }
+}
+
+/*--------------------/Header--------------------*/
+/*--------------------Hero--------------------*/
+.hero {
+
+    margin-top: 300px;
+    padding-bottom: clamp(1.25rem, -0.023rem + 6.36vw, 5.625rem);
+    position: relative
+}
+
+.hero .hero-deco {
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    z-index: -1;
+}
+
+@media (max-width: 576px) {
+    .hero .hero-deco {
+        height: 300px;
+    }
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+@media (max-width: 992px) {
+    .hero__container {
+        flex-direction: column;
+    }
+}
+
+.hero__content {
+    flex: 0 0 49.2957746479%;
+    padding-bottom: 160px;
+}
+
+@media (max-width: 992px) {
+    .hero__content {
+        padding-bottom: 20px;
+    }
+}
+
+.hero__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    color: #000000;
+}
+
+.hero__text {
+    margin-top: 18px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .hero__filter {
+        width: 100%;
+        position: static;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .hero__img {
+        display: none;
+    }
+}
+
+.submit__button {
+    width: 174px;
+    height: 66px;
+    background: #FDF190;
+    margin: 20px 400px ;
+    cursor: pointer;
+}
+p {
+    color: #000000;
+}
+
+a {
+     text-decoration: none;
+     color: #000000;
+}

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Каталог</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background: none;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class='header__cont'>
+            <a href="" class="header__logo">
+                <img src="img/Vector.svg" alt="">
+            </a>
+            <div class="header__navigation">
+                <nav class="header__menu menu">
+                    <ul class="menu__body">
+                        <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+                        <li class="menu__item"><a href="form.php" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__buttons">
+                    <button class="login header__btn">+7 (302) 785-85-98</button>
+                </div>
+                <div class="menu-icon">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <p class="lead text-muted">На данной странице вы можете увидеть список наших услуг.</p>
+                    <p>
+                        <a href="catalog.html#section1" class="btn btn-outline-warning">Макияж</a>
+                        <a href="catalog.html#section2" class="btn btn-outline-warning">Окрашивание</a>
+                        <a href="catalog.html#section3" class="btn btn-outline-warning">Наращивание</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <!-- делим на сетку 3х3 -->
+        <div class="album py-5 bg-light" >
+            <div class="container">
+                <!-- в каждом окне фото + две кнопки -->
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/catalog/1.jpg" width="100%" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Описание.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Просмотр</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Узнать
+                                            цену</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="section1">
+                        <div class="card shadow-sm">
+                            <img src="img/catalog/2.png" width="100%" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Описание.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Просмотр</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Узнать
+                                            цену.</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/catalog/3.jpg" width="100%" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Описание.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Просмотр</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Узнать цену
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/catalog/4.jpg" width="100%" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Описание.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-warning">Просмотр</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Узнать
+                                            цену</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="section2">
+                        <div class="card shadow-sm">
+                            <img src="img/catalog/5.jpg" width="100%" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Описание.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-warning">Просмотр</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Узнать
+                                            цену</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/catalog/6.jpg" width="100%" alt="">
+
+                            <div class="card-body">
+                                <p class="card-text">Описание.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Просмотр</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Узнать
+                                            цену</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/catalog/7.jpg" width="100%" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Описание.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Просмотр</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Узнать цену</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="section3">
+                        <div class="card shadow-sm">
+                            <img src="img/catalog/8.jpg" width="100%" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Описание.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Просмотр</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Узнать цену</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/catalog/9.jpg" width="100%" alt="">
+                            <div class="card-body">
+                                <p class="card-text">Описание.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Просмотр</button>
+
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Узнать цену</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

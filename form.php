@@ -101,20 +101,21 @@ require_once 'connect.php'
         <?php
         $users = mysqli_query($connect, "SELECT * FROM `users`");
         $users = mysqli_fetch_all($users);
-        foreach($users as $users) {
-            ?> 
-             <tr>
+        foreach ($users as $users) {
+        ?>
+            <tr>
                 <td><?= $users[0] ?></td>
                 <td><?= $users[1] ?></td>
                 <td><?= $users[2] ?></td>
                 <td><?= $users[3] ?></td>
                 <td><?= $users[4] ?></td>
             </tr>
-            <?php
+        <?php
         }
         ?>
     </table>
 </body>
+<script src="ajax.js"></script>
 <script src="index.js"></script>
 
 </html>

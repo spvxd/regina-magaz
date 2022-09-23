@@ -15,4 +15,3 @@ $phone = $_POST['phone'];
 
 mysqli_query($connect,"INSERT INTO `users` (`username`, `text`, `email`, `phone`) VALUES (	'$username', '$text', '$email', '$phone')");
 
-header('Location: form.php');

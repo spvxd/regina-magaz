@@ -14,6 +14,8 @@ require_once 'connect.php'
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
     <title>Форма</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
 </head>
 <style>
     th,
@@ -62,7 +64,7 @@ require_once 'connect.php'
     </header>
 
     <div class="page">
-        <form class="js-form" action="bd.php" method="post" novalidate>
+        <form class="js-form" action="" novalidate>
             <div class="form-left-decoration"></div>
             <div class="form-right-decoration"></div>
             <div class="circle"></div>
@@ -70,7 +72,7 @@ require_once 'connect.php'
                 <input type="text" class="input js-input" name="username" placeholder="Имя">
             </div>
             <div class="form__group">
-                <input type="text" class="input js-input" name="text" placeholder="Вид услуги">
+                <input type="text" class="input js-input js-input-text" name="text" placeholder="Вид услуги">
             </div>
             <div class="form__group">
                 <input type="email" class="input js-input js-input-email" name="email" placeholder="Email">
@@ -114,7 +116,12 @@ require_once 'connect.php'
         }
         ?>
     </table>
+    <script>
+       
+    </script>
 </body>
+
+
 <script src="ajax.js"></script>
 <script src="index.js"></script>
 
